@@ -31,7 +31,7 @@ const screen = document.querySelector('.screen');
                 break;
 
             case '+':
-            case '-':
+            case '−':
             case '×':
             case '÷':
                 handleMath(symbol);
@@ -57,7 +57,7 @@ const screen = document.querySelector('.screen');
     function flushOperation(intBuffer){
         if (previousOperator === '+'){
             runningTotal += intBuffer;
-        }else if (previousOperator === '-'){
+        }else if (previousOperator === '−'){
             runningTotal -= intBuffer;
         }else if (previousOperator === '×'){
             runningTotal *= intBuffer;
